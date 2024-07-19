@@ -19,7 +19,13 @@ class Fetcher {
   private static function libArchPart(){
     if(PHP_INT_MAX == 2147483647) {
       return '386';
-    } elseif (stristr(PHP_OS, 'DARWIN') && stripos(php_uname('m'), 'arm') !== false) {
+    } elseif (
+      stristr(PHP_OS, 'DARWIN')
+      && (
+        stripos(php_uname('m'), 'arm') !== false
+        || stripos(php_uname('m'), 'aarch64') !== false
+      )
+    ) {
       return 'arm64';
     } else {
       return 'amd64';
