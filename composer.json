@@ -1,5 +1,5 @@
 {
-  "name": "envkey/envkey-php",
+  "name": "david224-ic/envkey-php",
   "version": "2.4.4",
   "description": "Keeps environment variables automatically in sync. Protects secrets with end-to-end encryption.",
   "keywords": [
@@ -20,6 +20,10 @@
       "name": "EnvKey",
       "email": "support@envkey.com",
       "homepage": "https://envkey.com"
+    },
+    {
+      "name": "David H. Estevam",
+      "email": "david@inovaclick.com.br"
     }
   ],
   "require-dev": {
